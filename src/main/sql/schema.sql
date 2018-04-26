@@ -39,3 +39,10 @@ CREATE TABLE success_killed(
 
   -- SHOW CREATE TABLE seckill;#显示表的创建信息
 mysql -uroot -p
+
+V1.1
+update seckill set end_time = '2018-05-02 00:00:00';
+update seckill set start_time = '2018-04-29 00:00:00';
+update seckill set start_time = '2018-04-21 00:00:00' where seckill_id = 1000;
+update seckill set end_time = '2018-04-21 00:00:00' where seckill_id = 1001;
+update seckill set start_time = '2018-04-10 00:00:00' where seckill_id = 1001;
